@@ -1,5 +1,5 @@
-create table public.pagamento (
-  id_pagamento bigint null,
-  tipo character varying(50) null,
-  valor numeric(10, 2) null
+create table public.conta (
+  id_conta bigint null,
+  numero character varying(50) null,
+  saldo numeric(10, 2) null
 );
