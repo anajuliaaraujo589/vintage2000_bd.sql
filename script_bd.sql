@@ -11,3 +11,9 @@ create table conta (
   saldo    decimal(10,2)
  );
 
+create table estoque (
+  id_estoque SERIAL PRIMARY KEY,
+ quantidade    int,
+ id_produto   int not null,
+ id_fornecedor  int not null
+  );
