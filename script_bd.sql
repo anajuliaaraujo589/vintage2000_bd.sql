@@ -1,9 +1,8 @@
-create table public.venda (
-  id_venda bigint null,
-  data timestamp without time zone null,
-  valor_total numeric(10, 2) null,
-  forma_pagamento character varying(50) null,
-  id_cliente bigint null,
-  id_loja bigint null
+create table public.item_venda (
+  id_item_venda bigint null,
+  quantidade integer null,
+  preco_unitario numeric(10, 2) null,
+  id_produto bigint null,
+  id_estoque bigint null,
+  id_venda bigint null
  );
-
