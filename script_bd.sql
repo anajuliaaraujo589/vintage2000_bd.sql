@@ -51,4 +51,12 @@ create table fornecedor (
   valor      decimal(10,2) not null,
   status     varchar(50) not null,
   fk_venda       bigint not null
- ); 
+ );
+
+
+create table categoria (                                
+  id_categoria   SERIAL PRIMARY KEY,
+  nome         varchar(100) not null,
+  descricao    varchar(255)  
+);
+ 
