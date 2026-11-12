@@ -43,4 +43,12 @@ create table fornecedor (
   nome       varchar(255) not null,
   cnpj      varchar(18) not null,
   telefone     varchar(20)
+ );
+
+ create table pagamento (                                
+  id_pagamento   SERIAL PRIMARY KEY,
+  tipo       varchar(50) not null,
+  valor      decimal(10,2) not null,
+  status     varchar(50) not null,
+  fk_venda       bigint not null
  ); 
