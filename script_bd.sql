@@ -36,4 +36,11 @@ create table cliente (
   nome         varchar(255) not null,
   cpf             varchar(14) not null,
   fk_conta        bigint
+ );
+
+create table fornecedor (                                
+  id_fornecedor    SERIAL PRIMARY KEY,
+  nome       varchar(255) not null,
+  cnpj      varchar(18) not null,
+  telefone     varchar(20)
  ); 
