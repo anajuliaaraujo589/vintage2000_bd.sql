@@ -27,4 +27,13 @@ create table produto (
   preco_base          decimal(10,2) not null,
   fk_loja                  bigint not null,
   fk_categoria         bigint not null
- );  
+ ); 
+
+
+
+create table cliente (                                
+  id_cliente  SERIAL PRIMARY KEY,
+  nome         varchar(255) not null,
+  cpf             varchar(14) not null,
+  fk_conta        bigint
+ ); 
