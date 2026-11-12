@@ -59,4 +59,13 @@ create table categoria (
   nome         varchar(100) not null,
   descricao    varchar(255)  
 );
- 
+
+
+create table item_venda (                                
+  id_item_venda    SERIAL PRIMARY KEY,
+  quantidade     int not null,
+  preco_unitario     decimal(10,2) not null,
+  fk_produto           timestamp not null,
+  fk_estoque          timestamp,
+  fk_venda             timestamp not null
+ ); 
