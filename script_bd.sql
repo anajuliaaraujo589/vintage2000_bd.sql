@@ -17,3 +17,14 @@ create table estoque (
  id_produto   int not null,
  id_fornecedor  int not null
   );
+
+
+create table produto (                                
+  id_produto   SERIAL PRIMARY KEY,
+  nome         varchar(255) not null,
+  tendencia   varchar(255),
+  novidade              boolean
+  preco_base          decimal(10,2) not null,
+  fk_loja                  bigint not null,
+  fk_categoria         bigint not null
+ );  
